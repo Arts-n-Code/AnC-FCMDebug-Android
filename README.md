@@ -5,12 +5,12 @@
 Arts'N'Code Firebase Cloud Messaging Debug is an android debug application that is used to easily test your firebase notifications.
 
   - Simple app layout
-  - Grabs thhe device's firebase token (Instance ID)
+  - Grabs the device's firebase token (Instance ID)
 
-# How To
+# How-To
 
   - Clone this repository
-  - Sync gradle
+  - Sync Gradle
   - Open Gradle toolbar at the right of the Android Studio window
   - Run FirebaseNotificationTeste -> Tasks -> android -> signingReport
   - When the script finishes running you should be able to see the signing log in Android Studio
@@ -19,7 +19,7 @@ Arts'N'Code Firebase Cloud Messaging Debug is an android debug application that 
   - Add a new project (or use your existing project)
   - Once your project is ready go to your firebase project settings and add a new android app
   - Set the Android Package Name to: `com.artsncode.firebasenotificationtester`
-  - Set the Debug Siging Certificate SHA-1 to the key from the gradle signing report we got earlier
+  - Set the Debug Signing Certificate SHA-1 to the key from the Gradle signing report we got earlier
   - Click on Register App
   - Download `google-services.json` and save it in the project's directory in `app/google-services.json`
   - And that's it you are all set
@@ -27,7 +27,7 @@ Arts'N'Code Firebase Cloud Messaging Debug is an android debug application that 
 
 # Next Steps
   - You should be able now to send notification either by using the firebase console or by using their SDK/API
-  - You can also use the app as a sandbox for grabbing and mannipulating the received notifications
+  - You can also use the app as a sandbox for grabbing and manipulating the received notifications
 
 ### Send Notification to a Single Device
   - The application already has a button that when clicked it logs your device's firebase token (Instance ID)
@@ -40,8 +40,8 @@ Arts'N'Code Firebase Cloud Messaging Debug is an android debug application that 
 
 # Q&A
   > **Q**: I am only receiving a notification when the app is in the background, why?
-  > **A**: This is actually normal since by default the firebase android SDK only handles notifications and shows them to you when the app is in the background. If you need to handle messages in the foreground then you will need to override `FirebaseMessagingService` class and add your logic in `onMessageReceived()` method.
+  > **A**: This is normal since by default the firebase android SDK only handles notifications and shows them to you when the app is in the background. If you need to handle messages in the foreground then you will need to override the `FirebaseMessagingService` class and add your logic in `onMessageReceived()` method.
   
-  > **Q**: I am not receving notifications at all, wjy?
+  > **Q**: I am not receiving notifications at all, why?
   > **A**: Make sure to follow all the steps again and carefully, if that also did not work then create an issue with all the required information so that others can help you out.
 
