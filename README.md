@@ -22,6 +22,7 @@ Arts'N'Code Firebase Cloud Messaging Debug is an android debug application that 
   - Set the Debug Signing Certificate SHA-1 to the key from the Gradle signing report we got earlier
   - Click on Register App
   - Download `google-services.json` and save it in the project's directory in `app/google-services.json`
+  - Compile and run the app
   - And that's it you are all set
 
 
